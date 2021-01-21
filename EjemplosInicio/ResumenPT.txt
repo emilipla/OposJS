@@ -1,0 +1,15 @@
+En PT Ven:
+- Hardware: 
+Identificación de componentes, funcionamiento, compatibilidad. Montaje. Suele salir en los exámenes de las Oposiciones: 
+Foto con Placa Base,Compatibilidad entre distintos elementos, Características y funcionamiento. Se dá en SMR - MME, DAW/DAM SI y ASIR Fundamentos Hardware.
+
+- Redes : 
+Todo lo relacionado con redes sin entrar en mucha profundidad. Suele aparecer en los Test y preguntas breves. También es posible que aparezca un 
+ejercicio con una configuración de uno o varios departaments con varias subredes. Se dá en DAW/DAM SI algo de hardware de componentes en MME.
+
+- Sistemas Operativos. Cliente/Servidor sobre todo AD, Ficheros BAT, Comandos Linux y administración , Gestión de usuarios y samba, Sistemas de archivos, NFS/CIFS, 
+Arranque del sistema operativo e instalación. Se ve en SMR SOR y DAW/DAM SI ASIR ISO
+
+- Programación: HTML / CSS / JAVASCRIPT /JQUERY /AJAX /Node, Script Linux, Powershell, C# , BAT, DAM Desarrollo Interfaces, DAW Diseño interfaces Web 
+/ Desarrollo Wev entorno cliente, SI y SOR .Suele caer un ejercicio con HTML /CSS/JavaScript, fichero bat, o Script Linux
+
