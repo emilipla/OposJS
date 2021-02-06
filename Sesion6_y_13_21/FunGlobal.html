@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos y funciones Globales</title>
+</head>
+<body>
+    <h1>Tipos y funciones Globales</h1>
+<script>
+let a = 15;
+console.log(a);
+console.log(typeof a);
+a = "Cadena";
+console.log(typeof a);
+a = [12, 23, 4];
+console.log(typeof a);
+console.log(a instanceof Array);
+let b;
+console.log(typeof b);
+
+// Funciones Globales
+var minum1 = "14",cadena="Buenos días"
+console.log(minum1)
+console.log(typeof minum1)
+document.write(parseInt(minum1)); //Convierte una cadena en un valor numérico
+var minumC=parseInt(minum1)
+console.log(typeof minumC)
+document.write(escape(cadena)); /*Codifica la cadena del argumento 
+substituyendo todos los caracteres no ASCII por su código en el formato %xx  */
+</script>
+</body>
+</html>
