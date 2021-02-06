@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Función Onclick</title>
+</head>
+<body>
+    <div>
+<h1 id = "titulo"> Función Onclick</h1>
+<button id="boton"> Haz clic </button>
+    </div>
+    <script>
+
+function cambiar (){
+    document.getElementById("titulo").innerHTML="Nuevo titulo";
+}
+//cambiar();
+document.getElementById("boton").onclick=function(){
+    cambiar();
+}
+    </script>
+  </body>
+</html>

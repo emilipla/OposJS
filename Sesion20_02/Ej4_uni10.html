@@ -1,0 +1,78 @@
+<!DOCTYPE HTML >
+<!--
+Sea la tabla tb de 2 dimensiones, con 4 filas y 5 columnas. Realizar las siguientes operaciones:
+        - Introducir por teclado los valores en las 3 primera las y las 4 primeras columnas  (se conserva la última línea y la última columna libres para los totales de líneas y columnas)
+        - Sumar las columnas en la última línea y las líneas en la última columna
+-->
+<!-- Inicio script HTML -->
+<html>
+
+	<!-- Inicio encabezado script HTML -->
+	<head>
+		<!-- Etiqueta meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Título del script HTML -->
+		<title>EJ4_uni10</title>
+	</head>
+	<!-- Inicio sección body del script HTML -->
+	<body>
+		<!-- Título de la operación>
+		<h1>Academia Uni10 - JavaScript - Ejercicio EJ4</h1>
+		< Inicio script JavaScript -->
+		<script>
+
+			
+			/* Visualización del nombre del script */
+			alert("Ejercicio  EJ4");
+
+			/* Declaración de variables locales */
+			var tb = new Array(5);
+			var numLinea, numColumna;
+			var valor;
+
+			/* Declaración de 5 "columnas" por "la" para la tabla tb */
+			for (var numLinea = 1; numLinea < tb.length; numLinea++) {
+				/* Creación de las "columnas" (numeradas de 0 a 5) */
+				tb[numLinea] = new Array(6);
+				console.log(tb[numLinea]);
+			}
+
+			/* Inicialización de la tabla tb (3 filas * 4 columnas) para introducir por el teclado */
+			for (numLinea = 1; numLinea <= 3; numLinea++) {
+				for (numColumna = 1; numColumna <= 4; numColumna++) {
+					valor = parseInt(prompt("tabla[" + numLinea + "][" + numColumna + "] = "));
+					tb[numLinea][numColumna] = valor;
+					console.log(valor);
+				}
+			}
+
+			/* Puesta a cero de los totales en línea nº. 4 */
+			for (numColumna = 1; numColumna <= 5; numColumna++) {
+				tb[4][numColumna] = 0;
+			}
+
+			/* Puesta a cero de los totales en columna nº. 5 */
+			for (numLinea = 1; numLinea <= 4; numLinea++) {
+				tb[numLinea][5] = 0;
+			}
+
+			/* Determinación de los totales en línea nº. 4  y en columna nº. 5*/
+			for (numLinea = 1; numLinea <= 3; numLinea++) {
+				for (numColumna = 1; numColumna <= 4; numColumna++) {
+					/* Totalización en línea nº. 4 */
+					tb[4][numColumna] = tb[4][numColumna] + tb[numLinea][numColumna];
+					/* Totalización en  columna nº 5 */
+					tb[numLinea][5] = tb[numLinea][5] + tb[numLinea][numColumna];
+					/* Totalizacón general en línea nº 4-columna nº 5 */
+					tb[4][5] = tb[4][5] + tb[numLinea][numColumna];
+				}
+			}
+
+			/* Visualización del total general */
+			document.write("Total general en tb[4][5] = " + tb[4][5]);
+
+		</script>
+
+	</body>
+
+</html>

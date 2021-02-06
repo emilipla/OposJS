@@ -1,0 +1,49 @@
+<!DOCTYPE HTML >
+<!--
+Calcular la media de n números reales introducidos por teclado (la lista termina con cero)
+-->
+<!-- Inicio script HTML -->
+<html>
+
+	<!-- Inicio encabezado script HTML -->
+	<head>
+		<!-- Etiqueta meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Título del script HTML -->
+		<title>EJ2_uni10</title>
+	</head>
+	<!-- Inicio sección body del script HTML -->
+	<body>
+		<!-- Título de la operación>
+		<h1>Academia UNI10 - JavaScript - Ejercicio EJ2</h1>
+		<Inicio script JavaScript -->
+		<script>
+		
+			/* Visualización del nombre del script */
+			alert("Ejercicio  EJ2");
+			/* Declaración variables locales */
+			var nblu, cont, suma, media;
+			/* Inicializaciones */
+			cont = 0;
+			suma = 0.0;
+
+			/* Bucle de tratamiento */
+			do {
+				console.log(nblu); // este valor no está definido
+				nblu = parseFloat(prompt("N o (0 para terminar) : "));
+				cont = cont + 1;
+				suma = suma + parseFloat(nblu);
+				console.log(nblu); 
+			} while (nblu!=0)
+
+			/* Visualización del resultado */
+			if (cont == 1) {
+				document.write("No se ha introducido ninguno");
+			} else {
+				media = suma / (cont - 1);
+				document.write("Media : " + media);
+			}
+		</script>
+
+	</body>
+</html>

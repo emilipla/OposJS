@@ -1,0 +1,47 @@
+<!DOCTYPE HTML >
+<!--
+ Determinar la cantidad  de números pares de una tabla (introducir inicialmente 5 valores por el teclado)
+-->
+<!-- Inicio script HTML -->
+<html>
+	<!-- Inicio encabezado script HTML -->
+	<head>
+		<!-- Etiqueta meta -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Título del script HTML -->
+		<title>EJ3_uni10</title>
+	</head>
+	<!-- Inicio sección body del script HTML -->
+	<body>
+		<!-- Título de la operación>
+		<h1>Academia Uni10 - JavaScript - Ejercicio  EJ3</h1>
+		<Inicio script JavaScript -->
+		<script>
+			
+			/* Visualización del nombre del script */
+			alert("Ej3_uni10");
+			/* Declaración de variables locales */
+			/*
+			i         : Contador de bucle
+			numPares   : Acumulado de números pares
+			tabla   : Tabla de nombres
+			*/
+			var i, nb_pairs;
+			var tabla = new Array;
+			/* Inicializaciones */
+			numPares = 0;
+			for (i = 1; i <= 5; i++) {
+				tabla[i] = parseInt(prompt("tabla[" + i + "] : "));
+			}
+			/* Determinación del número de pares en la tabla */
+			for (i = 1; i <= 5; i++) {
+				if (tabla[i] % 2 == 0) {
+					numPares = numPares + 1;
+				}
+			}
+			/* Visualizaci󮠤el resultado */
+			document.write("La tabla contiene " + numPares + " números pares");
+
+		</script>
+	</body>
+</html>
