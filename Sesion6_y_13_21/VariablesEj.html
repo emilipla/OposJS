@@ -7,18 +7,38 @@
 </head>
 <body>
     <script>
-/* //variables 1
+/* //variables 1 ( var) el tipo depende del valor
 var num = 6  //tipo numérico, String, booleano, no empezar pon numero.
-var num2= 5
+var num2= 5  // var es global, se declara e inicializa a la vez
+var num = 8 // No hay error al declararla e inizializarla
 alert (num+num2);
-num2= 10
-alert (num+num2)
-const num3=20
-alert(num3)
-//num3=12 //esto nos genera un error
+num2= 10    // Permite reasignación
+alert (num+num2) */
+
+/* // con let es ámbito local
+let num3 = 78 
+let num3 =56 // ERROR no permite declararla e inicializarla de nuevo
+num3 = 78 // si se puede reasignar
+// comprobar ámbito let
+for (let i = 0; i <=5 ; i++) {
+    console.log(i) // no hay problema está dentro del for
+}
+console.log(i) // esto dá un error no está declarada, hay que definirla */
+
+/* // const 
+const num4=20 // hay que declararla y asignar valor , sino ERROR
+alert(num4)
+//num3=12 //No se puede reasignar, ERROR
 num=num+1
 num=++num;
-alert (num);*/
+alert (num);
+// Y en un Array ?
+const n = [55,20,40]
+n = [55,20,40,10] // no se puede reasignar, dá ERROR
+n.push(10) // con el método push si permite añadir
+console.log(n)
+// mejor definirlo con let en lugar de const
+*/
 
  /* // condicion
  var numero=10
@@ -35,7 +55,7 @@ alert (num);*/
      console.log("falso")
  } */
 
-// array
+/* // array
 var lista=[1,2,3,"Juan",true]
 //console.log(lista[3]); // el indice llama a juan
 // recorrer array
@@ -43,9 +63,9 @@ var lista=[1,2,3,"Juan",true]
     console.log(lista[i])
 }*/
 
-//while
+/* //while
 var w = 0
-/*while(w<10){
+ while(w<10){
     console.log("while "+w)
     w++
 }*/
@@ -53,28 +73,28 @@ var w = 0
 /*do {
     console.log("do "+w)
     w++
-}while(w<0)*/
+}while(w<0) Se ejecuta por lo menos una vez.*/
 
-//switch
-/*var hora
+/* //switch
+var hora
 hora = prompt("Vas a desayunar, comer o cenar?")
 switch(hora){
     case "desayunar":
         console.log("Entonces son las 9 de la mañana")
-        break
+        break  // sin break seguiría a la siguiente sentencia
     case "comer":
         console.log("Entonces son las 14:00 horas")
         break
     case "cenar":
         console.log("Entonces son las 21:00 horas")
         break
-    default:
+    default:  // si no se cumple ninguna expresión
         console.log("Eso es que no tienes hambre")
         break
 }*/
 
-// Funciones
-/*sin parámetros
+/* // Funciones
+sin parámetros
 var num1=10
 var num2 =30
 function suma(){
@@ -82,11 +102,11 @@ function suma(){
 }
 suma()*/
 
-// con parámetros
+/* // con parámetros
 function suma(num1,num2){
     return console.log(num1+num2)
 }
-suma(10,40)
+suma(10,40) */
 
     </script>
 </body>

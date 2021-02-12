@@ -9,6 +9,7 @@ if(numero < 0 || numero > 99999999) {
 }
 else {
   var letraCalculada = letras[numero % 23];
+  console.log(numero % 23) //Comprobar resto
   if(letraCalculada != letra) {
     alert("La letra o el número proporcionados no son correctos");
     alert("Su NIF debería ser: "+numero+letraCalculada);

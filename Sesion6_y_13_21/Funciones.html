@@ -8,43 +8,44 @@
 <body>
     <h1>FUNCIONES</h1>
     <script>
-   /* var num1=10;
+    var num1=10;
     var num2= 2;
     // funcion sin parámetros y con retorno.
-     function suma(){
+     /*function suma(){
         return console.log(num1+num2);
     }
-    suma(); /*
+    suma(); */
     
     // funcion con parámetros y con retorno.
     /*function suma(num1,num2){
         return console.log(num1+num2);
     }
     suma(20,10); */
-
+  
     // funcion que no devuelve nada
-   /* function suma(num1,num2){
-         total =num1+num2;
-        return alert ("total "+total);
-    
+   /*function suma(num1,num2){
+         num1+num2;
+       
     }
     suma(4,7);
+    var total=suma(10,10) //undefined sin el return
     alert("total2  "+total); // total no está definido sin el return*/
-/*
-    // IIFE (Inmediately Invoked Function Expression);
+
+    /*// IIFE (Inmediately Invoked Function Expression);
     (function suma(num1,num2){
         console.log(num1+num2);
     })(20,15); // Se invoca automáticamente */
     
-    //Sin flechas
+   /* //Sin flechas
     (function(){
         console.log("Date de Alta, funcion completa");
     })();
 // Funciones con Flechas sin parámetros
-    (()=>{
+    ((a,b)=>{
         console.log ('Date de Alta');
-    })(); 
-
+    
+    })(); */
+    
 // Funciones con Flechas con parámetros
 /*((nombre,Apellido)=>{
         console.log ("Date de Alta "+nombre+" "+Apellido);
@@ -52,9 +53,9 @@
     // Por defecto
     ((nombre="Higinio")=>{
         console.log ("Date de Alta "+nombre);
-    })();*/
+    })("")*/
 
-// funcion anónima y paso de función por parámetro
+//funcion anónima y paso de función por parámetro
     let llamaFunc=function(func,param){
         func(param);
         alert(param)
