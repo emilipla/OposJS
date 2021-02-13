@@ -9,11 +9,11 @@ num = parseFloat(prompt("Número (0 para terminar): "))
 while(num != 0){
     suma = suma + parseFloat(num)
     num = parseFloat(prompt("Número (0 para terminar): "))
-    cnt = cnt + 1
+    cnt = cnt + 1 // o cnt++
 }
 
 // Visualizar resultado
-if (num == 1) {
+if (cnt == 1) {
 document.getElementById("titulo").innerHTML="No hay ningún número"
 } else {
     media = suma / (cnt-1)

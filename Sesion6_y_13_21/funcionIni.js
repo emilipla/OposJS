@@ -15,3 +15,12 @@ function cambia(){ // Sin parámetros
 document.getElementById("boton").onclick = function(){
     cambia()
 }
+
+//Optimización de funcion con Arrow
+/*function saludar (nombre) {
+    return "Hola" + nombre
+}
+document.getElementById("titulo").innerHTML=saludar("  Higinio")*/
+// Arrow
+var saludar= nombre => "Hola " +nombre
+document.getElementById("titulo").innerHTML=saludar("  Higinio")
