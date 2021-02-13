@@ -1,5 +1,5 @@
 //switch evalúa la opcion
-let opcion=14;
+let opcion=21;
 switch(opcion){
     case 8:
         console.log("Hora de desayunar son: "+opcion);

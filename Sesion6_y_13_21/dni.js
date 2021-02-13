@@ -1,6 +1,6 @@
 var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
-var numero = prompt("Introduce tu número de DNI (sin la letra)");
+var numero = parseInt(prompt("Introduce tu número de DNI (sin la letra)"));
 var letra = prompt("Introduce la letra de tu DNI (en mayúsculas)");
 letra = letra.toUpperCase();
 

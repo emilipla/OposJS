@@ -9,7 +9,7 @@
 			//radio2 = 3.5;
 			pi = 3.14;
 			//Tambien se puede introducir por teclado, cuidado string
-			radio1=prompt("radio1: ")
+			radio1=parseInt(prompt("radio1: "))
 			console.log(radio1)
 			console.log(typeof radio1)
 			radio2=parseInt(prompt("radio2: "));

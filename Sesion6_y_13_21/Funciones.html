@@ -10,8 +10,9 @@
     <script>
     var num1=10;
     var num2= 2;
-    // funcion sin parámetros y con retorno.
-     /*function suma(){
+    
+    /*// funcion sin parámetros y con retorno.
+     function suma(){
         return console.log(num1+num2);
     }
     suma(); */
@@ -24,10 +25,9 @@
   
     // funcion que no devuelve nada
    /*function suma(num1,num2){
-         num1+num2;
-       
+         return num1+num2;
     }
-    suma(4,7);
+    //suma(4,7);
     var total=suma(10,10) //undefined sin el return
     alert("total2  "+total); // total no está definido sin el return*/
 
@@ -36,13 +36,14 @@
         console.log(num1+num2);
     })(20,15); // Se invoca automáticamente */
     
-   /* //Sin flechas
+   /*//Sin flechas anónima
     (function(){
         console.log("Date de Alta, funcion completa");
-    })();
-// Funciones con Flechas sin parámetros
-    ((a,b)=>{
-        console.log ('Date de Alta');
+    })();*/
+
+/*// Funciones con Flechas sin parámetros
+    (()=>{
+       console.log ('Date de Alta ');
     
     })(); */
     
@@ -50,10 +51,10 @@
 /*((nombre,Apellido)=>{
         console.log ("Date de Alta "+nombre+" "+Apellido);
     })("Pepe","Sánchez");
-    // Por defecto
+   // Por defecto
     ((nombre="Higinio")=>{
         console.log ("Date de Alta "+nombre);
-    })("")*/
+    })("Juan")*/
 
 //funcion anónima y paso de función por parámetro
     let llamaFunc=function(func,param){
