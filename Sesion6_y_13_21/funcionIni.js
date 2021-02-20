@@ -10,8 +10,9 @@ document.getElementById("titulo").innerHTML =suma(x,y)
 
 //Funciones sin parámetros y anónimas
 function cambia(){ // Sin parámetros
-    document.getElementById("titulo").innerHTML="Cambiado"
-} // si no ejecuto no cambia
+    document.getElementById("titulo").innerHTML="Cambiado por "
+    
+ } // si no ejecuto no cambia
 document.getElementById("boton").onclick = function(){
     cambia()
 }
