@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var numero = [1, 5, 10, 15];
+var dobles = numero.map(function(x) {
+   return x * 2;
+});
+
+// numero vale [1, 5, 10, 15]
+console.log("Mi tabla inicial número es : "+ numero)
+// dobles ahora es [2, 10, 20, 30]
+console.log("Mi tabla doble es : "+ dobles)
+
+
+var numero = [1, 4, 9];
+var raiz = numero.map(function(num) {
+    return Math.sqrt(num);
+});
+// raiz ahora es [1, 2, 3]
+console.log("Mi tabla inicial número es : "+ numero)
+// numero es todavía [1, 4, 9]
+console.log("Mi tabla raiz es : "+ raiz)
+    </script>
+</body>
+</html>

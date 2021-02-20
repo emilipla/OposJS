@@ -2,7 +2,7 @@
 function matBidim() {
 var tabla = new Array(3);
 tabla[0] = new Array(2);
-tabla[0][0] = 10;
+tabla[0][0] = 10;       
 tabla[0][1] = 5;
 tabla[1] = new Array(2);
 tabla[1][0] = 7;

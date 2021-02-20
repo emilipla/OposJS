@@ -33,7 +33,7 @@ Sea la tabla tb de 2 dimensiones, con 4 filas y 5 columnas. Realizar las siguien
 			/* Declaración de 5 "columnas" por "la" para la tabla tb */
 			for (var numLinea = 1; numLinea < tb.length; numLinea++) {
 				/* Creación de las "columnas" (numeradas de 0 a 5) */
-				tb[numLinea] = new Array(6);
+				tb[numLinea] = new Array(6); // La creamos en la linea 1
 				console.log(tb[numLinea]);
 			}
 
@@ -43,6 +43,7 @@ Sea la tabla tb de 2 dimensiones, con 4 filas y 5 columnas. Realizar las siguien
 					valor = parseInt(prompt("tabla[" + numLinea + "][" + numColumna + "] = "));
 					tb[numLinea][numColumna] = valor;
 					console.log(valor);
+					
 				}
 			}
 
