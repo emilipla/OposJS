@@ -9,16 +9,18 @@
     <h1>Construcción de objetos</h1>
     <script>
         // construccion de objetos
-class Vehiculo{
-    constructor(marca,modelo,stock,tipo){
-        this.marca=marca;
+class Vehiculo{  // creamos una plantilla 
+    constructor(marca,modelo,stock,tipo){ //Se crea e inicializa un objeto creado con la clase
+        this.marca=marca;  //This contiene todas las propiedades y Met. del objeto
         this.modelo=modelo;
         this.stock=stock;
         this.tipo=tipo;
     }
 }
-const vehiculo1 = new Vehiculo("seat","leon",20,"diesel");
-console.log(vehiculo1.marca);
+const vehiculo1 = new Vehiculo("seat","leon",20,"diesel"); //instancia a la clase
+const vehiculo2 = new Vehiculo("toyota","corolla",20,"hibrido")
+console.log(vehiculo1.modelo);
+console.log(vehiculo2.marca)
     </script>
 </body>
 </html>

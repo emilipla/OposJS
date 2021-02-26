@@ -9,18 +9,18 @@
     <h1>Crear Objetos</h1>
     <script>
 //creación de un objeto
-var vehiculo={
-    marca:"seat",
+/*var vehiculo={     //Objeto vehiculo
+    marca:"seat",   // Propiedades
     modelo:"leon",
     stock:20,
-    tipo:{
+    tipo:{     //Objeto dentro del objeto vehiculo
         combustible:"diesel",
         eco:"hibrido"
     }
 }
 console.log(vehiculo["marca"]); // Con []
 console.log(vehiculo.modelo); // con .
-console.log(vehiculo.tipo.combustible);
+console.log(vehiculo.tipo.combustible); // llamada jerarquica */
 // creación Array de objetos
 var arrayob=[
 {
@@ -42,9 +42,12 @@ var arrayob=[
     }
 }
 ]
+console.log(arrayob[0])
+console.log(arrayob[1])
 // recorrer array de objetos
 for (let i of arrayob){
-    console.log(i.modelo);
+    console.log("Array ")
+    console.log(i.marca);
 }
     </script>
 </body>
