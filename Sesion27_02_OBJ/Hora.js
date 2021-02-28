@@ -4,9 +4,10 @@ function visualizarHoraActual() {
 
     // Conversión de la hora del sistema en formato local (hh:mm:ss)
     var hhmmss = miReferenciaTiempo.toLocaleTimeString();
-    
+    var ddmm = miReferenciaTiempo.toLocaleDateString();
     // Visualización del span horaEnCurso 
     document.getElementById("horaEnCurso").innerHTML= hhmmss ;
+    document.getElementById("Fechactual").innerHTML= ddmm 
 
     }
 

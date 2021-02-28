@@ -41,8 +41,8 @@ class Alumno {
     } // this hace referencia a todo el objeto
 }
 // instanciar el objeto
-const alumnoUno=new Alumno('Pedro',25,'Estudiante','UMH'); //Instanciamos el objeto
-const alumnoDos=new Alumno('Andrés',27,'Estudiante','UMH')
+const alumnoUno=new Alumno('Pedro',25); //Instanciamos el objeto
+const alumnoDos=new Alumno('Andrés',27)
 console.log(alumnoUno)
 console.log(alumnoDos.edad)
 console.log(alumnoDos.Opositor())
