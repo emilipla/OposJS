@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document </title>
+</head>
+<body>
+    <h1>Objeto Document</h1>
+    <a name="html">Curso nº1 (HTML)</a>	<br /> 
+	<a name="css">Curso nº2 (CSS)</a> <br />
+    <a name="xml">Curso nº3 (XML)</a> <br><br />
+        
+    <!-- Definición de varios enlaces "hypertexto" consecutivos en el documento-->
+		Motor de búsqueda <a href="http://www.google.fr" id="google">Google</a>	<br />
+		Sitio de información <a href="http://www.yahoo.es" id="yahoo">Yahoo</a>	<br />
+        Enciclopedia <a href="http://www.wikipedia.fr" id="wikipedia">Wikipedia</a> <br><br />
+
+    <script type='text/javascript'>
+        alert("Document Write"); // Visualización del nombre del script 
+     
+        document.write("Hola Uni10 <br />"); // Visualización por el método document.write 
+        document.write("Hola <b>Uni10</b>!"); // Negrita Uni10
+
+        document.write("<pre>"); //Texto preformateado se muestra tal como está
+			document.write("Línea nº1<br>");
+			document.write("Línea nº2<br>");
+			document.write("Línea nº3<br><br />");
+			document.writeln("Línea nº4"); // salta línea sin br
+			document.writeln("Línea nº5");
+			document.write("Línea nº6");
+            document.write("</pre>");
+            
+/* Visualización del número de enlace(s) 'hypertexto' del documento */
+document.write("Número de enlace(s) 'hypertexto' del documento : " + document.links.length + "<br />");
+
+/* Visualización identificador del segundo enlace 'hypertexto' del documento */
+document.write("Identificador del segundo enlace 'hypertexto' del documento : " + document.links[1].id + "<br />");
+
+/* Visualización de la URL del tercer enlace 'hypertexto' del documento */
+document.write("URL del tercer enlace 'hypertexto' del documento : " + document.links[2].href + "<br><br/>");
+
+/* Visualización del número de enlace(s) del documento */
+document.write("Número de enlace(s) del documento : " + document.anchors.length + "<br />");
+
+/* Visualización del nombre del primera enlace del documento */
+document.write("primer enlace del documento : " + document.anchors[0].text + "<br />");
+
+/* Visualización del nombre del segundo enlace del documento */
+document.write("segundo enlace del documento : " + document.anchors[1].name + "<br><br />");
+
+// Visualización datos del documento
+			/* Visualización del título del documento */
+			document.write("Título del documento : "
+			+ document.title + "<br />");
+
+			/* Visualización del nombre de dominio del documento */
+			document.write("Dominio del documento : "
+			+ document.domain + "<br />");
+			
+			/* Visualización de la URL absoluto del documento */
+			document.write("URL absoluto del documento : "
+			+ document.URL + "<br />");
+
+			/* Visualización de la fecha de última modificación del documento */
+			document.write("Fecha de última modificación del documento : "
+			+ document.lastModified);
+
+
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br/>
+ <a href="#html">subir a html</a> 
+</body>
+</html>

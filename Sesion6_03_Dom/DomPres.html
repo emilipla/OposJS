@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Presentacion DOM</title>
+</head>
+<body>
+    <div id ="container" >
+       
+    </div>
+    <div id ="contenedor">
+        <h1 id="titulo"> Presentación DOM</h1>
+        <p id="parrafo" class="P1">Lorem 11 ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
+        cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
+        <p id="parrafo" class="P1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
+            cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
+          
+    </div>
+    <script>
+        var parrafo = document.getElementsByTagName("p");
+        var titulo = document.getElementById("titulo") // devuelve el título
+       titulo.innerHTML="Nuevo texto" //puedo modificar el texto.
+        console.log(titulo);
+        console.log(parrafo[0]);
+
+// Crear un nuevo parrafo dentro de contenedor.
+var nuevo_parrafo = document.createElement("p").appendChild(document.createTextNode("Nuevo párrafo."));
+    
+    // Creamos una variable del segundo párrafo
+    var segundo_p = document.getElementById("contenedor").getElementsByTagName("p")[1];
+    
+    // Y ahora lo insertamos
+    document.getElementById("contenedor").insertBefore(nuevo_parrafo,segundo_p);
+           
+    
+// Búsqueda del elemento div con identificador container
+var antiguoContainer = document.getElementById("container");
+// Creación en memoria de un elemento div
+var nuevaDiv = document.createElement("div");
+// Creación del nodo de tipo texto
+var textoDiv = document.createTextNode("Buenos días, mundo");
+var texto1Div = document.createTextNode("Texto linea 2 ") // creamos otra línea texto para el div nuevo
+// Asignación del nodo textoDiv al nodo nuevaDiv
+nuevaDiv.appendChild(textoDiv);
+nuevaDiv.appendChild(texto1Div); // añadimos el texto a div
+// Integración del nuevo div
+antiguoContainer.appendChild(nuevaDiv); // añadimos el nuevo div al antiguo
+console.log(antiguoContainer) // visualizamos el div creado.
+//más datos
+console.log(document.head);
+console.log(document.body);
+console.log(document.lastChild);
+console.log(antiguoContainer.childNodes);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Dom inicio</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 id="titulo"> Introducción al DOM</h1>
+        <p id="parrafo" class="P1">Lorem 11 ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
+        cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
+        <p id="parrafo" class="P1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
+            cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
+        
+        <button id="boton" class="btn btn-info">Cambiar</button>
+        <!--button id="boton" class="btn btn-info" onclick="alert('click')">-->
+
+    </div>
+    <script>
+        // accedemos al id del título, capturamos todo el h1
+        var h1 = document.getElementById("titulo"); 
+        console.log(h1); //1
+        console.log(h1.innerHTML); //2 podemos acceder únicamente al texto de h1.
+        h1.innerHTML = "Este es el nuevo texto" // Podemos modificar el texto.
+        h1.style.color="blue"
+        h1.style.background="red"
+
+        // accedemos al párrafo
+        var parrafo = document.getElementById("parrafo");
+        parrafo.style.color="blue"
+
+        //accedemos al botón
+        var boton = document.getElementById("boton");
+        
+        /* boton.onclick = function (){    // es una funcion anónima se puede hacer así
+            parrafo.style.color="green"
+        } */
+
+        function cambiar() {
+            parrafo.style.color="green"
+        }
+        boton.onclick = cambiar; // tambien se puede hacer así
+
+        // vamos acceder desde class
+       // var parrafo1 = document.getElementsByClassName("P1");
+       // console.log(parrafo1[0]); // devuelve un array si es colectivo el párrafo
+
+        // querySelector podemos buscar cualquier selector
+       var parrafo1 = document.querySelector("p")
+        console.log(parrafo1)
+
+        // trabajar con eventos.
+        var boton1 = document.getElementById("boton");
+        boton1.addEventListener("click", function(){
+            console.log("has hecho click");
+        })
+        boton1.addEventListener("mouseover", function(){
+            console.log("he detectado el ratón");
+        })
+        boton1.addEventListener("mouseout", function(){
+            console.log("fuera ratón");
+        })
+    </script>
+</body>
+</html>
