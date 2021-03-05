@@ -11,47 +11,49 @@
 <body>
     <div class="contenedor">
         <h1 id="titulo"> Introducción al DOM</h1>
-        <p id="parrafo" class="P1">Lorem 11 ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
-        cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
-        <p id="parrafo" class="P1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
-            cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
+        <p id="parrafo" class="P1">Contenido del Primer parrafo class P1.</p>
+        <p id="parrafo" class="P1">Contenido del Segundo parrafo class P1.</p>
         
         <button id="boton" class="btn btn-info">Cambiar</button>
-        <!--button id="boton" class="btn btn-info" onclick="alert('click')">-->
+        
+        <!--button id="boton" class="btn btn-info" onclick="alert('click')"> Mejor en JS-->
 
     </div>
     <script>
         // accedemos al id del título, capturamos todo el h1
         var h1 = document.getElementById("titulo"); 
-        console.log(h1); //1
+        console.log(h1); // devuelve h1
         console.log(h1.innerHTML); //2 podemos acceder únicamente al texto de h1.
         h1.innerHTML = "Este es el nuevo texto" // Podemos modificar el texto.
-        h1.style.color="blue"
+        h1.style.color="blue" //Propiedades al estilo de CSS
         h1.style.background="red"
 
         // accedemos al párrafo
-        var parrafo = document.getElementById("parrafo");
-        parrafo.style.color="blue"
-
-        //accedemos al botón
+        var par1 = document.getElementById("parrafo");
+         par1.style.color="blue" //solo el 1 parrafo
+         parrafo[1].style.color="red" //también se puede acceder directamente
+       
+        //se puede acceder con un boton
         var boton = document.getElementById("boton");
         
         /* boton.onclick = function (){    // es una funcion anónima se puede hacer así
-            parrafo.style.color="green"
+            par1.style.color="green"
         } */
 
         function cambiar() {
-            parrafo.style.color="green"
+            h1.style.color="green"
         }
         boton.onclick = cambiar; // tambien se puede hacer así
 
         // vamos acceder desde class
        // var parrafo1 = document.getElementsByClassName("P1");
-       // console.log(parrafo1[0]); // devuelve un array si es colectivo el párrafo
+       // console.log(parrafo[0]); // devuelve un array si es colectivo el párrafo
 
         // querySelector podemos buscar cualquier selector
-       var parrafo1 = document.querySelector("p")
+       var parrafo1 = document.querySelector("p") // me devuelve el 1 parrafo
+       var parrafo1 = document.querySelectorAll("p") // devuelve todos
         console.log(parrafo1)
+        //console.log(parrafo1[0])// el primero
 
         // trabajar con eventos.
         var boton1 = document.getElementById("boton");

@@ -7,30 +7,30 @@
 </head>
 <body>
     <h1>Navegacion por el DOM</h1>
-    <ul id="padre">
+    <ul id="padre"> <!--lista sin orden-->
         <li id="firstListElement">Element 1</li>
-        <li>Element 2</li>
-        <li>Element 3</li>
+        <!--li>Element 2</li>
+        <li>Element 3</li-->
     </ul>
 <script>
 let firstLi = document.getElementById("padre"); // Devuelve <li>
 console.log(firstLi);
-console.log(firstLi.nodeName); // Imprime "LI"
+console.log(firstLi.nodeName); // Imprime "UL"
 console.log(firstLi.nodeType); // Imprime 1. (elemento -> 1, atributo -> 2, texto -> 3, comentario -> 8)
-console.log(firstLi.firstChild.nodeValue); // Imprime "Element 1". El primer (y único) hijo es un nodo de texto
+//console.log(firstLi.firstChild.nodeValue); // Imprime "Element 1". El primer (y único) hijo es un nodo de texto
 console.log(firstLi.textContent); // Imprime "Element 1". Otra forma de obtener el contenido (texto)
 // Itera a través de todos los elementos de la lista
-let liElem = firstLi;
+let liElem = firstLi; // todos los elementos de li
 while(liElem !== null) {
 console.log(liElem.innerText); // Imprime el texto de dentro del elemento <li>
 liElem = liElem.nextElementSibling; // Va al siguiente elemento de la lista <li>
 }
-let ulElem = firstLi.parentElement; // Obtiene el elemento <ul>. Similar a parentNode.
+//let ulElem = firstLi.parentElement; // Obtiene el elemento <ul>. Similar a parentNode.*/
 /* Imprime el código HTML de dentro del elemento <ul>:
 <li id="firstListElement">Element 1</li>
 <li>Element 2</li>
 <li>Element 3</li> */
-console.log(ulElem.innerHTML);
+//console.log(ulElem.innerHTML);
 
 
 </script>

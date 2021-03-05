@@ -9,51 +9,64 @@
     <title>Presentacion DOM</title>
 </head>
 <body>
-    <div id ="container" >
+    <div id="container">
        
     </div>
     <div id ="contenedor">
         <h1 id="titulo"> Presentación DOM</h1>
-        <p id="parrafo" class="P1">Lorem 11 ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
-        cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
-        <p id="parrafo" class="P1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde molestias eligendi est accusantium 
-            cupiditate magni, libero debitis omnis, sed iste error quia distinctio! Illo porro eos, suscipit ad est adipisci.</p>
+        <p id="parrafo" class="P1">Contenido del Primer parrafo P1</p>
+        <p id="parrafo" class="P1">Contenido del Segundo parrafo P1</p>
           
     </div>
     <script>
-        var parrafo = document.getElementsByTagName("p");
+        /* // 1 comprobación de propiedades
+        console.log (document.body.childNodes) // Ver Nodos Hijos
+        var parrafo = document.getElementsByTagName("p"); // accede al párrafo de forma directa
         var titulo = document.getElementById("titulo") // devuelve el título
-       titulo.innerHTML="Nuevo texto" //puedo modificar el texto.
+      // titulo.innerHTML="Nuevo texto" //puedo modificar el texto.
         console.log(titulo);
-        console.log(parrafo[0]);
+        console.log(parrafo[1]);// hay 2 parrafos, accedo al primero
+        console.log(parrafo[1].textContent)*/
 
-// Crear un nuevo parrafo dentro de contenedor.
-var nuevo_parrafo = document.createElement("p").appendChild(document.createTextNode("Nuevo párrafo."));
+/* // 2 Crear un nuevo parrafo dentro de contenedor.
+var texto = prompt("introduce un texto") //Pidiendo el texto
+var nuevo_parrafo = document.createElement("p").appendChild(document.createTextNode(texto))
+//var nuevo_parrafo = document.createElement("p").appendChild(document.createTextNode("Nuevo párrafo."));
     
     // Creamos una variable del segundo párrafo
-    var segundo_p = document.getElementById("contenedor").getElementsByTagName("p")[1];
+var segundo_p = document.getElementById("contenedor").getElementsByTagName("p")[1];
     
-    // Y ahora lo insertamos
-    document.getElementById("contenedor").insertBefore(nuevo_parrafo,segundo_p);
-           
+    // Y ahora lo insertamos despues del 2 párrafo
+document.getElementById("contenedor").insertBefore(nuevo_parrafo,segundo_p);*/
+         
     
-// Búsqueda del elemento div con identificador container
+// 3 Búsqueda del elemento div con identificador container
 var antiguoContainer = document.getElementById("container");
 // Creación en memoria de un elemento div
 var nuevaDiv = document.createElement("div");
 // Creación del nodo de tipo texto
-var textoDiv = document.createTextNode("Buenos días, mundo");
-var texto1Div = document.createTextNode("Texto linea 2 ") // creamos otra línea texto para el div nuevo
+var textoDiv = document.createTextNode(" Buenos días, Mundo div Insertado ");
+var texto1Div = document.createTextNode(" Texto linea 2 ") // creamos otra línea texto para el div nuevo
 // Asignación del nodo textoDiv al nodo nuevaDiv
 nuevaDiv.appendChild(textoDiv);
 nuevaDiv.appendChild(texto1Div); // añadimos el texto a div
 // Integración del nuevo div
 antiguoContainer.appendChild(nuevaDiv); // añadimos el nuevo div al antiguo
 console.log(antiguoContainer) // visualizamos el div creado.
-//más datos
+
+// 4 creamos un Div nuevo
+var Div4 = document.createElement("div");
+var textoDiv4 = document.createTextNode("Buenos días, mundo div4 nuevo")
+Div4.appendChild(textoDiv4)
+console.log(Div4.innerText) // visualizamos el div4 creado Nuevo
+
+// 5 más datos
+
 console.log(document.head);
 console.log(document.body);
 console.log(document.lastChild);
+console.log(antiguoContainer.parentNode)
+console.log (antiguoContainer.children)
 console.log(antiguoContainer.childNodes);
 
     </script>
