@@ -9,8 +9,8 @@
     <h1>Navegacion por el DOM</h1>
     <ul id="padre"> <!--lista sin orden-->
         <li id="firstListElement">Element 1</li>
-        <!--li>Element 2</li>
-        <li>Element 3</li-->
+        <li>Element 2</li>
+        <li>Element 3</li>
     </ul>
 <script>
 let firstLi = document.getElementById("padre"); // Devuelve <li>
@@ -25,12 +25,12 @@ while(liElem !== null) {
 console.log(liElem.innerText); // Imprime el texto de dentro del elemento <li>
 liElem = liElem.nextElementSibling; // Va al siguiente elemento de la lista <li>
 }
-//let ulElem = firstLi.parentElement; // Obtiene el elemento <ul>. Similar a parentNode.*/
-/* Imprime el código HTML de dentro del elemento <ul>:
-<li id="firstListElement">Element 1</li>
+//let ulElem = firstLi.parentElement; // Obtiene el elemento <ul>. Similar a parentNode.
+//Imprime el código HTML de dentro del elemento <ul>:
+/*<li id="firstListElement">Element 1</li>
 <li>Element 2</li>
-<li>Element 3</li> */
-//console.log(ulElem.innerHTML);
+<li>Element 3</li> 
+//console.log(ulElem.innerHTML);*/
 
 
 </script>
