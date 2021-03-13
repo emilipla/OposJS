@@ -2,12 +2,12 @@ let link = document.getElementById("toGoogle");
 let link1=document.getElementById("toGoogle1")
 
 link.className = "enlaceuni10"; // Equivale a: link.setAttribute("class", "enlace");
-link.setAttribute("href", "https://twitter.com");
-link.textContent = "Twitter";
+link.setAttribute("href", "https://uni10.es/");
+link.textContent = "Uni10";
 if(!link.hasAttribute("title")) { // Si no tenía el atributo title, establecemos uno 
-link.title = "Ahora voy a Twitter!";
+link.title = "Ahora voy a Uni10!";
 }
-// Imprime: <a id="toGoogle" href="https://twitter.com" class="enlace“ title="Ahora voy a Twitter!">Twitter</a> 
+// Imprime: <a id="toGoogle" href="https://uni10.es/" class="enlaceuni10“ title="Ahora voy a Uni10!">Uni10</a> 
 let ValorAt=link.getAttribute("title")
 console.log(ValorAt);
 console.log(link);

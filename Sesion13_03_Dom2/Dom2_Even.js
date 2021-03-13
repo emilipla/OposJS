@@ -10,6 +10,7 @@ boton1.addEventListener("mouseout", function(){
     console.log("fuera ratón");
 })
 window.addEventListener("load", function(){
+
     console.log("has cargado el documento");
 })
 window.addEventListener("resize", function(){

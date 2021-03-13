@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     <title>Evento Boton Aumentar</title>
+   
+ </head>
+<body>
+<div class="container bg-warning text-center py-5">
+    <h1>Contador</h1>
+    <button id="btAumenta" class="btn btn-info">Aumentar</button>
+    <button id="btDismi" class="btn btn-danger">Disminuir</button>
+    <h4 class="my-5">Contador : <span id="span">0</span></h4>
+</div>
+
+<script>
+    const botAum= document.querySelector('.btn-info')
+    const span = document.getElementById('span')
+    let contador = 0
+
+    botAum.addEventListener('click',()=>{
+        console.log('Hiciste Click Aumentar')
+        contador++
+        span.textContent=contador
+    })
+
+    const botDis= document.querySelector('.btn-danger')
+    //const span1 = document.getElementById('span')
+  
+
+    botDis.addEventListener('click',()=>{
+        console.log('Hiciste Click Disminuir')
+        contador--
+        span.textContent=contador
+    })
+    
+</script>
+   
+</body>
+</html>

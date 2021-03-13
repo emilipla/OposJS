@@ -9,7 +9,7 @@ const fondo = document.querySelector('#fondo');
 
 function delegar (ev){
     ev.preventDefault();
-    //console.log(ev.target.classList[0]);
+    console.log(ev.target.classList[1]);
     const colorbtn=ev.target.classList[1];
 
     switch (colorbtn){
