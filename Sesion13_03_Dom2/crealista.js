@@ -7,7 +7,7 @@ li.textContent = 'Primer elemento' // Añadimos texto
 
 lista.appendChild(li) // Lo incorporamos a la lista */
 
-// lo podemos sacar de una lista
+// lo podemos sacar de una lista*/
 const arraylis = ['Primer element','segundo','tercero','cuarto']
 
 /*// Primera forma con forEach y textContent

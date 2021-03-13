@@ -1,7 +1,7 @@
 let link = document.getElementById("toGoogle");
 let link1=document.getElementById("toGoogle1")
 
-link.className = "enlaceuni10"; // Equivale a: link.setAttribute("class", "enlace");
+link.className = "enlaceuni10"; // Equivale a: link.setAttribute("class", "enlaceuni10");
 link.setAttribute("href", "https://uni10.es/");
 link.textContent = "Uni10";
 if(!link.hasAttribute("title")) { // Si no tenía el atributo title, establecemos uno 
