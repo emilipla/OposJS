@@ -1,5 +1,6 @@
 console.log("*********** Elementos dentro de body ***********");
 let bodyNodes = document.body.children;
+console.log(bodyNodes)
 for (let i = 0; i < bodyNodes.length; i++) {
     console.log(bodyNodes[i]);
 }
