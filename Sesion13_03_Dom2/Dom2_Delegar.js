@@ -2,10 +2,10 @@ const AgBotones = document.querySelector('#agbotones');
 const tbotones = document.querySelector("#botones");
 const fondo = document.querySelector('#fondo');
 
-(()=>{
+//(()=>{
     AgBotones.addEventListener('click', agregarbotones);
     tbotones.addEventListener('click', delegar);
-})();
+//})();
 
 function delegar (ev){
     ev.preventDefault();

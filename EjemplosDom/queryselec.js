@@ -14,7 +14,8 @@ for(let i = 0; i < items.length; i++) {
 }
 
 console.log("----- Igual que antes pero con querySelectorAll ------");
-let itemsSel = document.querySelectorAll("ul.ul1 > li.item1");
+let itemsSel = document.querySelectorAll("ul.ul1 > li#firstListElement") //li.item1");
+console.log(itemsSel)
 for(let i = 0; i < itemsSel.length; i++) {
     console.log(itemsSel[i].textContent);
 }

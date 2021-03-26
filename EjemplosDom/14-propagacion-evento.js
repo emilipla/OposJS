@@ -8,11 +8,15 @@ let div3 = document.getElementById("div3");
 div1.addEventListener('click', event => {
     console.log("Click en div1, Fase: " + event.eventPhase);
     console.log(event.target)
-    //event.stopPropagation();
+    event.stopPropagation();
 }, false);
 div2.addEventListener('click', event => {
     console.log("Click en div2, Fase: " + event.eventPhase);
+    event.stopPropagation();
 }, false);
 div3.addEventListener('click', event => {
     console.log("Click en div3, Fase: " + event.eventPhase);
+    event.stopPropagation();
 }, false);
+//Fase de eventos: 0 = no hay evento, 1 = se propaga de hijos a padres
+// 2 = el evento ha llegado al objetivo finaliza. 3 = orden inveros padres a hijos
