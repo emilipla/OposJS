@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery</title>
-<script src="jquery.js"></script>
+<script src="jquery.js"></script> <!--Traemos jquery local-->
 <script>
     $(document).ready(function(){
         $("div.menu_punto").hide();
@@ -13,7 +13,9 @@
         });
     });
     </script>
-<style>
+<!--Elemento style nos sirve para dar estilo, 
+	tiene que estar en Head,  se puede hacer en CSS-->
+<style> 
 body {
 	margin: 10px;
 	font: 0.8em Arial, Helvetica, sans-serif;
@@ -36,11 +38,14 @@ body {
 	padding-left: 30px;
 	text-decoration: none;
 }
-.menu_punto a:hover {
+.menu_punto a:hover { 
 	color: black;
 	text-decoration: underline;
 }
 </style>
+<!--#elemento:hover {  Cuando se pasa por encima del El. sel. cambia de color
+	background: green;
+}-->
 </head>
 <body>
 <div> 
