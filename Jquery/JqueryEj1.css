@@ -1,0 +1,27 @@
+body {
+	margin: 10px;
+	font: 0.8em Arial, Helvetica, sans-serif;
+}
+.menu {
+	width: 150px;
+}
+.menu_capitulo {
+	padding: 5px;
+	cursor: pointer;
+	position: relative;
+	margin: 0 0 3px 0;
+	font-weight: bold;
+	border: 1px solid black;
+}
+.menu_punto a {
+	display: block;
+	color: black;
+	background-color: white;
+	padding-left: 30px;
+	text-decoration: none;
+}
+.menu_punto a:hover {
+	color: black;
+	background: green;
+	text-decoration: underline;
+}
