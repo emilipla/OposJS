@@ -1,0 +1,14 @@
+
+    .hidden { 
+        display:none;
+    }  
+    div { 
+        width: 40px;   
+        height: 40px;   
+        margin: 5px;   
+        float: left;  
+        border: 1px solid black;
+    }  
+    p { 
+        text-align: center;
+    }  

@@ -1,0 +1,14 @@
+body{
+    width:85%;
+    min-width: 800px;
+    margin:0 auto;
+    text-align: center;
+}
+footer{
+    padding: 10px 2px;
+    /*maquetación del pie de página con cajas flexibles*/
+    display:flex; justify-content: space-around;
+}
+section>div{  overflow-y: scroll;}
+/*esta última regla CSS también se podría expresar con el siguiente selector
+sustituyendose por h2+div{ overflow-y:scroll;} */
