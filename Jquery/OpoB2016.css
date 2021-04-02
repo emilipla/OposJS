@@ -5,10 +5,11 @@ body{
     text-align: center;
 }
 footer{
-    padding: 10px 2px;
+    padding: 10px 0px;
     /*maquetación del pie de página con cajas flexibles*/
     display:flex; justify-content: space-around;
 }
-section>div{  overflow-y: scroll;}
+/*section>div{  overflow-y: scroll;}*/
+h3+div{ overflow-y:scroll;}
 /*esta última regla CSS también se podría expresar con el siguiente selector
-sustituyendose por h2+div{ overflow-y:scroll;} */
+sustituyendose por h3+div{ overflow-y:scroll;} */
