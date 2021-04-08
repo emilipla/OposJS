@@ -15,12 +15,14 @@ $(document).ready(function () {
     /*Acciones para pasar candidatos
     Definir evento doble-click (con el método on) para elementos DOM 
     iniciales y futuros (creados dinámicamente)*/
+    
     $(document).on("dblclick","section:first-child>div>p",function(){
         $("section:last-child>div").append("<p>"+ $(this).html() +"</p");
         $(this).remove();
+        console.log("Pasa "+ $(this).html());
         return false;
-        var primero=document.querySelector("section:first-child>div>p[1]");
-        console.log(primero);
+        //var primero=document.querySelector("section:first-child>div>p[1]");
+        
     });
     $(document).on("dblclick","section:last-child>div>p",function(){
         $("section:first-child>div").append("<p>"+ $(this).html() + "</p");

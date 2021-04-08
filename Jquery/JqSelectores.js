@@ -10,11 +10,11 @@ $(document).ready(function () {
     //document.querySelector('.text-center').innerHTML = 'Texto con clase JS';
 
     // cambia el texto en todos los h1 de la clase
-    // $(".division h1").html("cambio de texto");
+    //$(".division h1").html("cambio de texto");
     // cambia el texto en el primer h1 de la clase
     //$(".division h1:first").html("cambio de texto");
     // cambia el texto en ultimo h1 de la clase
-    // $(".division h1:last").html("cambio de texto");
+    //$(".division h1:last").html("cambio de texto");
 
 //Agrengando Clase addClass
 //$('#idagrega').addClass('text-danger');  
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 // función remove / hide
 //$('#contenido').remove(); // lo elimina incluso de la consola
-//$('#idquita').hide(); // únicamente lo oculta.
+//$('#idquita').remove(); // únicamente lo oculta.
 //let quitar = document.querySelector('#idquita')
 //console.log(quitar)
 
